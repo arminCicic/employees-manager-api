@@ -10,8 +10,9 @@ SQL Database: The app uses a SQL database to store employee data.
 Installation
 To run the app locally, follow these steps:
 
-Clone the repository: git clone https://github.com/yourusername/employeemanagementapp.git
-Navigate to the project directory: cd employeemanagementapp
+Clone the repository: git clone https://github.com/arminCicic/employees-manager-api.git
+Navigate to the project directory: cd employees-manager-api
+
 Install dependencies: dotnet restore
 Update the database with the latest schema: dotnet ef database update
 Start the app: dotnet run
