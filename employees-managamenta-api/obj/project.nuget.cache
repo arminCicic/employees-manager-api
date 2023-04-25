@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PMSGU8U4QMvtLMOe5pWQ5iwRH7BCKcrOMJd5nK/o3ls93JHeeVAhEoSjV9gzyrQgJ7JBYIGd76Pr0rX6PsoKzg==",
+  "dgSpecHash": "LUzialA7qDhZHxWSD8Jbh93/L27s6qDPE3GG1koAiUaI/WHkgVDR8WRakiQrj8h+wQo2a1D41s1D/ieU83pOZQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\armin\\OneDrive\\Desktop\\employees-managamenta-api\\employees-managamenta-api\\EmployeesManagerApi.csproj",
+  "projectFilePath": "C:\\Users\\armin\\OneDrive\\Desktop\\employees manager api\\employees-managamenta-api\\EmployeesManagerApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\armin\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\armin\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

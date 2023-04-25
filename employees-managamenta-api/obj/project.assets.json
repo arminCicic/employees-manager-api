@@ -3691,11 +3691,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\armin\\OneDrive\\Desktop\\employees-managamenta-api\\employees-managamenta-api\\EmployeesManagerApi.csproj",
+      "projectUniqueName": "C:\\Users\\armin\\OneDrive\\Desktop\\employees manager api\\employees-managamenta-api\\EmployeesManagerApi.csproj",
       "projectName": "EmployeesManagerApi",
-      "projectPath": "C:\\Users\\armin\\OneDrive\\Desktop\\employees-managamenta-api\\employees-managamenta-api\\EmployeesManagerApi.csproj",
+      "projectPath": "C:\\Users\\armin\\OneDrive\\Desktop\\employees manager api\\employees-managamenta-api\\EmployeesManagerApi.csproj",
       "packagesPath": "C:\\Users\\armin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\armin\\OneDrive\\Desktop\\employees-managamenta-api\\employees-managamenta-api\\obj\\",
+      "outputPath": "C:\\Users\\armin\\OneDrive\\Desktop\\employees manager api\\employees-managamenta-api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\armin\\AppData\\Roaming\\NuGet\\NuGet.Config",

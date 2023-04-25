@@ -10,8 +10,6 @@
 
         public string Email { get; set; } = string.Empty;
 
-        public string Dob { get; set; } = string.Empty;
-
         public string Gender { get; set; } = string.Empty;
 
         public string Education { get; set; } = string.Empty;
@@ -19,8 +17,13 @@
         public string Company { get; set; } = string.Empty;
         public string Experience { get; set; } = string.Empty;
 
+        public DateTime DoB { get; set; }
+
 
     }
 }
+
+
+
 
 

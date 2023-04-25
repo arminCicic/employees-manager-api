@@ -1,6 +1,7 @@
 ﻿using employees_manager_api;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Globalization;
 using System.Reflection;
 
 namespace employees_managamenta_api.Controllers
@@ -9,19 +10,7 @@ namespace employees_managamenta_api.Controllers
     [ApiController]
     public class EmployeesManagerController : ControllerBase
     {
-        //private static List<Employee> employees = new List<Employee>
-        //    { new Employee {
-        //        Id = 5,
-        //        FirstName = "Armin",
-        //        LastName = "cicic",
-        //        Email = "armincicic@gmail.com",
-        //        Dob = "04.06.1990",
-        //        Gender = "male",
-        //        Education = "diploma",
-        //        Company = "readydev",
-        //        Experience = "two",
-
-        //        }};
+     
 
         private readonly DataContext dataContext;
 
@@ -69,16 +58,18 @@ namespace employees_managamenta_api.Controllers
             if (dbEmployee == null)
 
                 return BadRequest("Employee is not found");
-           
+
+            DateTime datePublished = DateTime.ParseExact(request.DoB.ToString("yyyy-mm-dd"), "yyyy-mm-dd", CultureInfo.InvariantCulture);
 
             dbEmployee.FirstName = request.FirstName;
             dbEmployee.LastName = request.LastName;
             dbEmployee.Email = request.Email;
-            dbEmployee.Dob = request.Dob;
+            dbEmployee.DoB = datePublished;
             dbEmployee.Gender = request.Gender;
             dbEmployee.Education = request.Education;
             dbEmployee.Company = request.Company;
             dbEmployee.Experience = request.Experience;
+            
 
             await this.dataContext.SaveChangesAsync();
 
@@ -89,13 +80,13 @@ namespace employees_managamenta_api.Controllers
         [HttpDelete("{id}")]
         public async Task<ActionResult<List<Employee>>> Delete(int id)
         {
-            var dbHero = await this.dataContext.Employees.FindAsync(id);
-            if (dbHero == null)
+            var dbEmployee = await this.dataContext.Employees.FindAsync(id);
+            if (dbEmployee == null)
 
                 return BadRequest("Employee is not found");
           
 
-            this.dataContext.Employees.Remove(dbHero);
+            this.dataContext.Employees.Remove(dbEmployee);
             await this.dataContext.SaveChangesAsync();
 
             return Ok(await this.dataContext.Employees.ToListAsync());
