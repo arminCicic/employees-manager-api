@@ -2,12 +2,12 @@ Backend of employees manager app with .NET6, Entity Framework Core, and SQL. App
 users to create, update, and delete employee information. The app uses a SQL database to store employee data, which enables it to perform CRUD
 (Create, Read, Update, Delete) operations seamlessly.
 
-###Features
+### Features
 Entity Framework Core: The app uses Entity Framework Core to manage database operations, making it easier to work with SQL databases.
 CRUD Operations: The app allows you to easily create, read, update, and delete employee information.
 SQL Database: The app uses a SQL database to store employee data.
 
-###Installation
+### Installation
 To run the app locally, follow these steps:
 
 Clone the repository: git clone https://github.com/arminCicic/employees-manager-api.git
